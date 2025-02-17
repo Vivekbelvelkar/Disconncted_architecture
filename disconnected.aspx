@@ -66,7 +66,7 @@
                 <td class="auto-style3">&nbsp;</td>
                 <td>
                     <asp:Button ID="btninsert" runat="server" OnClick="btninsert_Click" Text="insert" />
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btndelete" runat="server" OnClick="btndelete_Click" Text="delete" />
                 </td>
                 <td>&nbsp;</td>

@@ -24,17 +24,18 @@ namespace webapp_disconnected150225
 
             bool isDeleted = false; 
             string nm = txtname.Text;
+            string locate = txtlocation.Text;
             
             foreach (DataRow row in ds.Tables["employee"].Rows)
             {
 
-                if (row["location"].ToString() == txtlocation.Text)
+                if (!String.IsNullOrEmpty(nm)  &&   row["location"].ToString().Trim() == txtlocation.Text)
                 {
                     row.Delete();
                     isDeleted = true;
                     // break;
                 }
-                else if (row["name"].ToString() == txtname.Text)
+                if (!String.IsNullOrEmpty(locate)   && row["location"].ToString().Trim() == txtlocation.Text)
                 {
                     row.Delete();
                     isDeleted = true;
